@@ -1,0 +1,20 @@
+{
+  "name": "vue3-vite-router-project",
+  "version": "1.0.0",
+  "description": "A Vue 3 project setup with Vite and Vue Router",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "3.2.25",
+    "vue-router": "4.0.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "unplugin-auto-import": "^0.18.0",
+    "unplugin-vue-components": "^0.27.3",
+    "vite": "5.2.6"
+  }
+}
