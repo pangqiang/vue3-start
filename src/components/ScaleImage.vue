@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useUrl, useWidth } from 'composables/useScale'
+import { useUrl, useWidth } from '@/composables/useScale'
 
 const props = defineProps({
   src: {
