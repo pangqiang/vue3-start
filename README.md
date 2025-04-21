@@ -17,5 +17,7 @@
 
 首先，确保你的环境符合要求，然后运行以下命令安装依赖：
 
-```bash
-pnpm install
+`pnpm install`
+
+### 启动开发环境
+`pnpm run dev`
