@@ -52,6 +52,8 @@ export function useUrl(width, imgSrc, imgSet) {
     // 计算出缩放图的路径
     const scale = imgSet.find(item => item >= width.value * dpr.value)
     if (scale)
+      // /(\.[a-z]+)$/i：匹配图片文件的扩展名（如 .jpg, .png）
+      // _${scale}$1：在文件名中添加缩放比例（如 image.jpg 替换为 image_2x.jpg）
       return imgSrc.replace(/(\.[a-z]+)$/i, `_${scale}$1`)
     else
       return imgSrc
