@@ -1,21 +1,35 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    // 指定 TypeScript 编译后的 JavaScript 目标版本。ESNext 表示使用最新的 ECMAScript 标准
+    "target": "ESNext", 
+    // module: 指定模块系统。ESNext 表示使用最新的 ECMAScript 模块（ESM）
     "module": "ESNext",
+    // moduleResolution: 模块解析策略。Node 表示使用 Node.js 的模块解析规则。
     "moduleResolution": "Node",
+    // strict: 启用严格模式，包含一系列严格的类型检查选项（如 strictNullChecks 等）。
     "strict": true,
+    // 指定如何处理 JSX 语法。preserve 表示保留 JSX，不进行转换（通常用于 Vue 或 React 项目）。
     "jsx": "preserve",
+    // 减少重复代码，通过引入 tslib 来优化辅助函数的使用
     "importHelpers": true,
+    // 启用对 ES 模块默认导入的兼容性支持（允许使用 import 导入 CommonJS 模块）。
     "esModuleInterop": true,
+    // 生成 .map 文件，用于调试时将编译后的代码映射回源代码。
     "sourceMap": true,
+    // 允许导入 .json 文件并将其解析为模块。
     "resolveJsonModule": true,
+    // 配置模块解析的基础路径，. 表示当前项目根目录。
     "baseUrl": ".",
+    // 配置路径别名。@/* 表示 src/*，方便在代码中使用别名导入。
     "paths": {
       "@/*": ["src/*"]
     },
+    // 指定编译时需要包含的库。ESNext 表示最新的 ECMAScript 特性，DOM 表示浏览器环境的 DOM API。
     "lib": ["ESNext", "DOM"],
+    // 指定全局类型声明文件。node 表示包含 Node.js 的类型定义。
     "types": ["node"]
   },
+  // 指定需要编译的文件或目录：
   "include": ["env.d.ts", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules"]
 }
